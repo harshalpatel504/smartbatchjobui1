@@ -1,0 +1,25 @@
+<mat-card class="create-batch-job-data">
+
+    <mat-card-title style="color: cadetblue; background-color:wheat;">
+        create-batch-job-data</mat-card-title>
+    
+    <form>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>batchJobName</mat-label>
+        <select matNativeControl required >
+          <option value=""></option>
+          <option value=""></option> 
+          <option value=""></option> 
+          <option value=""></option> 
+          </select>
+      </mat-form-field>
+    
+    <ag-grid-angular style="width: 1000px;height: 200px" 
+      class="ag-theme-balham" [columnDefs]="column"
+      [rowData]="rowData"
+      (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+    
+</form>
+    </mat-card> 
